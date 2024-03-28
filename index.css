@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+#loader>img{
+    border-radius: 9999px;
+    animation-direction: alternate;
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    height: 50vh;
+    width: 50vh;
+    border-top: 3vh;
+}
+
+@keyframes pulse {
+    0%,100%{
+        opacity: 0.9;
+    }
+    10%,90%{
+        opacity: 0.8;
+    }
+    20%,80%{
+        opacity: 0.6;
+    }
+    30%,70%{
+        opacity: 0.5;
+    }
+    40%,60%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.3;
+    }
+}
+
+/*
+
+body{
+    background-color: black;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    width: 80px;
+    animation: tilt 3s ;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    border-radius: 50%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 2px dotted white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.nav-items{
+    margin: 10px;
+    box-sizing: border-box;
+}
+.nav-items>ul{
+list-style-type: none;
+display: flex;
+}
+
+.nav-items>ul li{
+    padding:10px;
+    margin-right:10px;
+    
+
+    border-radius: 10%;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 100px;
+    perspective-origin: center;
+    position: relative;
+}
+
+.card{
+    border: 4px double white;
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform:translateY(-2%)
+}
+
+.card img{
+    width: 100%;
+    height: 12rem;
+    border-radius: 10%;
+}
+
+
+.search-container{
+   
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin: 10px;
+    position:relative;
+    overflow: hidden;
+}
+
+.search-input{
+height: 3rem;
+margin-right: 5px;
+margin-left: 5px;
+padding-left: 10px;
+min-width: 10%;
+background-color: rgb(250, 235, 215);
+
+}
+
+
+.search-btn{
+height: 3.2rem;
+cursor: pointer;
+}
+
+
+
+@keyframes tilt {
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+        transform: translate(+200%,0);
+    }
+}
+
+
+
+
+.shimmerLine{
+    height: 1em;
+    width: 90%;
+    background-color: rgba(248, 248, 255, 0.144);
+    margin: 0.6em;
+    overflow: hidden;
+}
+
+.shimmer{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background:linear-gradient(95deg,
+    rgba(255, 255, 255, 0)20%,
+    rgba(255, 255, 255, 0.5)50%,
+    rgba(255, 255, 255, 0)80%);
+
+    animation: shimmer 1s infinite linear;
+}
+
+@keyframes shimmer {
+    0%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(300%);
+    }
+}
+
+*/
